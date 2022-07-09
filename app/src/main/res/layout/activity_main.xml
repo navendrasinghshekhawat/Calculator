@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#CAF0F6"
+    android:weightSum="2"
+    android:gravity="center_horizontal"
+    android:layout_weight="1">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/textstyle"
+            >
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:id="@+id/et1"
+                android:gravity="right|center_vertical"
+                android:textSize="50dp"
+                />
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:id="@+id/et2"
+                android:background="@drawable/textstyle"
+                android:gravity="right|center_vertical"
+                android:textSize="50dp"
+                />
+        </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Calculator"-->
+<!--        android:textSize="35dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:gravity="right"-->
+<!--        android:id="@+id/tv1"-->
+<!--       />-->
+
+
+<LinearLayout
+android:gravity="bottom"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:minHeight="80sp"
+    android:weightSum="4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/ac"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="AC"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:textColor="#F44336"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/costonbutton"
+                android:onClick="solve"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/bracketOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="("
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/bracketClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=")"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:minHeight="80sp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="X"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:minHeight="80sp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:minHeight="80sp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:minHeight="80sp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/dot"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="."
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/percent"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="%"
+                android:textSize="40dp"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:onClick="solve"
+                android:background="@drawable/costonbutton"/>
+
+            <Button
+                 android:layout_weight="1"
+                android:id="@+id/equalsTo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="="
+                android:textSize="40dp"
+                android:textColor="#6723E6"
+                android:shadowColor="#FF3C3E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/costonbutton"/>
+
+
+
+        </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
